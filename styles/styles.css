@@ -1,0 +1,94 @@
+body {
+  background: #141414;
+  background: linear-gradient(
+    156deg,
+    rgba(20, 20, 20, 1) 0%,
+    rgba(79, 3, 3, 1) 80%,
+    rgba(128, 4, 4, 1) 100%,
+    rgba(181, 0, 0, 1) 100%
+  );
+  min-height: 100vh;
+}
+
+.navbar {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(100%, 1200px, 100%);
+  height: 13%;
+  min-height: 50px;
+  background-color: #b38f6f;
+  z-index: 70;
+  top: 0;
+  right: 0;
+  position: fixed;
+  box-shadow: rgba(20, 20, 20, 0.767) 0px 20px 30px -10px;
+}
+
+.navbar__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar__logo-img {
+  display: block;
+  min-width: 100px;
+  width: 12%;
+  max-width: 900px;
+  height: auto;
+  object-fit: contain;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 40px;
+  max-width: 1800px;
+  margin: 100px auto 0;
+  margin-top: 10%;
+}
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img7,
+.img8,
+.img9,
+.img10 {
+  width: 200px; /* یا هر اندازه دلخواه */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s;
+  border: solid 2px #b38f6f00;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover,
+.img4:hover,
+.img5:hover,
+.img6:hover,
+.img7:hover,
+.img8:hover,
+.img9:hover,
+.img10:hover {
+  transform: scale(1.05);
+  border: solid 2px #b38f6f;
+  transition: 400ms;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
